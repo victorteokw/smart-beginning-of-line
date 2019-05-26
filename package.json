@@ -10,6 +10,10 @@
 	"categories": [
 		"Other"
 	],
+	"repository": {
+    "type": "git",
+    "url": "https://github.com/zhangkaiyulw/smart-beginning-of-line.git"
+  },
 	"activationEvents": [
 		"onCommand:extension.smartBeginningOfLine"
 	],
