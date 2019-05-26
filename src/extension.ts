@@ -4,7 +4,7 @@ import {
 
 export function activate(context: ExtensionContext) {
   let disposable = commands.registerTextEditorCommand(
-    'extension.smartBeginningOfLine',
+    'smartBeginningOfLine',
     (editor: TextEditor) => {
       let allCursorsAtSBA = true;
       for (const sel of editor.selections) {
