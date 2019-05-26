@@ -1,13 +1,11 @@
 import {
-  window, commands, ExtensionContext, Position, Selection
+  commands, ExtensionContext, Position, Selection, TextEditor
 } from 'vscode';
 
 export function activate(context: ExtensionContext) {
   let disposable = commands.registerTextEditorCommand(
     'extension.smartBeginningOfLine',
-    () => {
-      const editor = window.activeTextEditor;
-      if (!editor) return;
+    (editor: TextEditor) => {
       let allCursorsAtSBA = true;
       for (const sel of editor.selections) {
         const line = editor.document.lineAt(sel.active);

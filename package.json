@@ -15,13 +15,13 @@
     "url": "https://github.com/zhangkaiyulw/smart-beginning-of-line.git"
   },
   "activationEvents": [
-    "onCommand:extension.smartBeginningOfLine"
+    "onCommand:smartBeginningOfLine"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "extension.smartBeginningOfLine",
+        "command": "smartBeginningOfLine",
         "title": "Smart Beginning of Line"
       }
     ]
